@@ -1,0 +1,209 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(./images/bg-desktop.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size:100%;
+}
+
+.mainBody{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+column-gap: 1rem;
+
+}
+
+.FylofileTools{
+    background-color: hsl(228, 56%, 26%);
+    border-radius:10px 50% 10px 10px;
+    height: 12rem;
+    
+}
+.titleName{
+    content: url(./images/logo.svg);
+    color:hsl(243, 100%, 93%);
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.documentIcon{
+    background-color: hsl(229, 57%, 11%);
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 12px;
+}
+.documentIcon:hover{
+    background-color:#ff8198;
+}
+.folderIcon{
+    background-color: hsl(229, 57%, 11%);
+    padding: 12px;
+    border-radius: 10px;
+}
+.folderIcon:hover{
+    background-color:#ff8198;
+}
+.uplaodIcon{
+    background-color: hsl(229, 57%, 11%);
+    padding: 14px;
+    border-radius: 10px;
+}
+.uplaodIcon:hover{
+    background-color:#ff8198;
+}
+
+.dataBox{
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    margin-top: auto;
+}
+.storage{
+    color: hsl(243, 100%, 93%);
+    margin-left: 10px;  
+}
+.numWhite{
+    color: hsl(243, 100%, 93%);
+    font-weight: 700;
+}
+
+.whiteBox{
+    
+    border-color: white;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: 38%;
+    left: 75%;
+    width: 15%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.whiteBox::after{
+    content: "";
+    position: absolute;
+    border-right: 20px solid white;
+    border-top: 20px solid white;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    left: 124px;
+    top: 80%;
+}
+
+.whiteBoxLT{
+    color:hsl(229, 57%, 11%);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.loadingBar{
+    width: 500px;
+    height: 10px;
+    border-radius: 10px;
+}
+.inside{
+    
+    background: linear-gradient(90deg, rgba(255,163,153,1) 0%, rgba(255,77,151,1) 35%);
+    height: 10px;
+    width: 70%;
+    border-radius: inherit;
+    position: relative;
+    
+}
+.inside::after{
+    content: "";
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    aspect-ratio: 1;
+    border-style: solid;
+    background-color: white;
+    top: 0rem;
+    left: 21.6rem;
+    height: 6px;
+}
+.whiteBoxRT{
+    color:hsl(229, 7%, 55%);
+}
+
+
+.gbText{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+      
+}
+.minGbText{
+    color: white;
+    margin-left: 10px;  
+
+}
+.maxGbText{
+    color: white;
+    margin-right: 10px;  
+}
+@media screen and (max-width: 600px) {
+    body{
+        background-image:  url(./images/bg-mobile.png);}
+    .mainBody{
+        display: block;
+        
+        }
+        .FylofileTools {
+            background-color: hsl(228, 56%, 26%);
+            border-radius: 10px 50% 10px 10px;
+            height: 12rem;
+            padding-left: 135px;
+            padding-top: 10px;
+        }
+        .documentIcon{
+            background-color: hsl(229, 57%, 11%);
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 12px;
+        }
+        .documentIcon:hover{
+            background-color:#ff8198;
+        }
+        .folderIcon{
+            background-color: hsl(229, 57%, 11%);
+            padding: 12px;
+            border-radius: 10px;
+        }
+        .folderIcon:hover{
+            background-color:#ff8198;
+        }
+        .uplaodIcon{
+            background-color: hsl(229, 57%, 11%);
+            padding: 14px;
+            border-radius: 10px;
+        }
+        .uplaodIcon:hover{
+            background-color:#ff8198;
+        }
+        
+        .whiteBox{
+    
+            border-color: white;
+            border-radius: 10px;
+            background-color: white;
+            position: absolute;
+            top: 74%;
+            left: 30%;
+            width: 30%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .whiteBox::after{
+            content: "";
+            position: absolute;
+            border-right: 0px solid white;
+            border-top: 0px solid white;
+            border-left: 0px solid transparent;
+            border-bottom: 0px solid transparent;
+            left: 0px;
+            top: 0%;
+        }
+}
